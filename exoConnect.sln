@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32126.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exoConnect", "exoConnect\exoConnect.csproj", "{0149AFD0-FA66-4F07-AEAB-53BBE1E26089}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0149AFD0-FA66-4F07-AEAB-53BBE1E26089}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0149AFD0-FA66-4F07-AEAB-53BBE1E26089}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0149AFD0-FA66-4F07-AEAB-53BBE1E26089}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0149AFD0-FA66-4F07-AEAB-53BBE1E26089}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D3F3FA3F-7BB5-4687-A4E9-A39E42C8C243}
+	EndGlobalSection
+EndGlobal
