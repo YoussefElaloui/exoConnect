@@ -47,5 +47,11 @@ namespace exoConnect
             Frm_recherche f = new Frm_recherche();
             fillMain(f);
         }
+
+        private void btn_reporting_Click(object sender, EventArgs e)
+        {
+            Frm_reporting f = new Frm_reporting();
+            fillMain(f);
+        }
     }
 }

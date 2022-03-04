@@ -36,12 +36,14 @@ namespace exoConnect
             this.label1 = new System.Windows.Forms.Label();
             this.pnl_main = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.btn_reporting = new System.Windows.Forms.Button();
             this.pnl_sideBar.SuspendLayout();
             this.pnl_main.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnl_sideBar
             // 
+            this.pnl_sideBar.Controls.Add(this.btn_reporting);
             this.pnl_sideBar.Controls.Add(this.btn_exit);
             this.pnl_sideBar.Controls.Add(this.btn_recherche);
             this.pnl_sideBar.Controls.Add(this.btn_miseajour);
@@ -122,6 +124,20 @@ namespace exoConnect
             this.label2.Text = "Gestion Projects";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btn_reporting
+            // 
+            this.btn_reporting.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btn_reporting.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_reporting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_reporting.Location = new System.Drawing.Point(0, 152);
+            this.btn_reporting.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
+            this.btn_reporting.Name = "btn_reporting";
+            this.btn_reporting.Size = new System.Drawing.Size(203, 54);
+            this.btn_reporting.TabIndex = 4;
+            this.btn_reporting.Text = "Reporting";
+            this.btn_reporting.UseVisualStyleBackColor = false;
+            this.btn_reporting.Click += new System.EventHandler(this.btn_reporting_Click);
+            // 
             // Frm_menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -148,5 +164,6 @@ namespace exoConnect
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel pnl_main;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btn_reporting;
     }
 }

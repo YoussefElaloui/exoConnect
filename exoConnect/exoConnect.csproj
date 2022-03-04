@@ -32,11 +32,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,6 +55,42 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="config.cs" />
+    <Compile Include="Cr_carte.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cr_carte.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cr_employees.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cr_employees.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cr_graphique.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cr_graphique.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cr_lstProjets.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cr_lstProjets.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cr_projects.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cr_projects.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cr_taches.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cr_taches.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,14 +115,50 @@
     <Compile Include="Frm_miseajour.Designer.cs">
       <DependentUpon>Frm_miseajour.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_print.Designer.cs">
+      <DependentUpon>Frm_print.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_recherche.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frm_recherche.Designer.cs">
       <DependentUpon>Frm_recherche.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_reporting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_reporting.Designer.cs">
+      <DependentUpon>Frm_reporting.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cr_carte.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cr_carte.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cr_employees.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cr_employees.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cr_graphique.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cr_graphique.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cr_lstProjets.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cr_lstProjets.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cr_projects.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cr_projects.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cr_taches.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cr_taches.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -92,8 +171,14 @@
     <EmbeddedResource Include="Frm_miseajour.resx">
       <DependentUpon>Frm_miseajour.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_print.resx">
+      <DependentUpon>Frm_print.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_recherche.resx">
       <DependentUpon>Frm_recherche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_reporting.resx">
+      <DependentUpon>Frm_reporting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -114,6 +199,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
